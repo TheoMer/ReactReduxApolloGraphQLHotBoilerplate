@@ -3,7 +3,6 @@ import { syncHistoryWithStore, routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import { browserHistory } from 'react-router'
 import rootReducer from 'rootReducer'
-import client from 'config/apolloClient'
 import { IS_DEVELOP } from 'config'
 
 
@@ -14,7 +13,7 @@ const isClient = typeof document !== 'undefined'
 const initialState = {}
 
 const routingMiddleware = routerMiddleware(browserHistory)
-const middlewares = [thunk, routingMiddleware, client.middleware()]
+const middlewares = [thunk, routingMiddleware]
 
 const enhancers = []
 if (isClient && IS_DEVELOP) {

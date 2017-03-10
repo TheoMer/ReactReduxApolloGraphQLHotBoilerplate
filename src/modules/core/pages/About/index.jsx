@@ -5,20 +5,12 @@ import styles from './styles.scss'
 
 const About = () => (
   <Grid>
-    <PageHeader>React Redux Apollo GraphQL Hot Boilerplate</PageHeader>
+    <PageHeader>React Redux Hot Boilerplate</PageHeader>
     <h1>About</h1>
-    <p>There was no boilerplate that would meet my expectations so I created my own.</p>
-    <p>Backend is provided by <a
-      href="https://www.graph.cool/" target="_blank"
-      rel="noopener noreferrer"
-    ><strong>graph.cool</strong></a>.</p>
     <ul>
       <li>Hot reloading</li>
       <li>
         <a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">Webpack2</a>
-      </li>
-      <li>
-        <a href="https://github.com/apollographql/react-apollo" target="_blank" rel="noopener noreferrer">React Apollo</a>
       </li>
       <li>
         <a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">React</a>

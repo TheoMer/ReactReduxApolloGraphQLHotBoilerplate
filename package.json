@@ -1,5 +1,5 @@
 {
-  "name": "React-Redux-Apollo-GraphQL-Hot-Boilerplate",
+  "name": "React-Redux-Hot-Boilerplate",
   "author": {
     "name" : "Michal Jarnot",
     "email" : "m.jarnot@yahoo.com"
@@ -29,7 +29,6 @@
     }
   },
   "dependencies": {
-    "apollo-client": "^0.7.3",
     "babel": "^6.5.2",
     "babel-core": "^6.13.2",
     "babel-eslint": "^7.1.1",
@@ -38,16 +37,12 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
-    "graphql-tag": "^1.2.3",
-    "immutability-helper": "^2.1.2",
     "path": "^0.12.7",
     "postcss-loader": "^0.9.1",
     "react": "^15.3.0",
-    "react-apollo": "^0.8.1",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.3.0",
     "react-hot-loader": "^3.0.0-beta.6",
-    "react-nl2br": "^0.2.0",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.1",
     "react-router-bootstrap": "^0.23.1",

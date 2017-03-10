@@ -1,14 +1,9 @@
-# React Redux Apollo GraphQL Hot Boilerplate
+# React Redux Hot Boilerplate
 
 ## About
 
-There was no boilerplate that would meet my expectations so I created my own.
-
-Backend is provided by **[graph.cool](https://www.graph.cool/)**.
-
 * Hot reloading
 * [Webpack2](https://github.com/webpack/webpack)
-* [React Apollo](https://github.com/apollographql/react-apollo)
 * [React](https://github.com/facebook/react)
 * [React Router](https://github.com/rackt/react-router)
 * [Redux](https://github.com/rackt/redux)

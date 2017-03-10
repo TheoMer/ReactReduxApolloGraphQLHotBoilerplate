@@ -15,11 +15,6 @@ const App = props => (
         },
         {
           id: 2,
-          label: 'Posts',
-          href: '/posts',
-        },
-        {
-          id: 3,
           label: 'About',
           href: '/about',
         },

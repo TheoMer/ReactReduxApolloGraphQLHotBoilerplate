@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 // Makes hot module replacement possible
 import { AppContainer } from 'react-hot-loader'
 
-// This is our App with ApolloProvider and Router
+// This is our App with redux provider
 import AppRouter from 'routes'
 
 

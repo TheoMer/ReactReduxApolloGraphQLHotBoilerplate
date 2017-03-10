@@ -1,8 +1,7 @@
 import React from 'react'
 import { Router, Route, IndexRoute } from 'react-router'
-import { ApolloProvider } from 'react-apollo'
 import store, { history } from 'store'
-import client from 'config/apolloClient'
+import { Provider } from 'react-redux'
 import App from 'modules/core/App'
 
 
@@ -13,7 +12,7 @@ const loadRoute = cb => module => cb(null, module.default)
 const errorLoading = err => console.error(`Dynamic route loading failed ${err}`)
 
 const AppRouter = props => (
-  <ApolloProvider {...props} store={store} client={client}>
+  <Provider {...props} store={store}>
     <Router history={history}>
       <Route path={'/'} component={App}>
         <IndexRoute
@@ -30,46 +29,6 @@ const AppRouter = props => (
           getComponent={
             (location, cb) => {
               System.import('modules/counter/containers/Base')
-                .then(loadRoute(cb))
-                .catch(err => errorLoading(err))
-            }
-          }
-        />
-        <Route
-          path={'/posts'}
-          getComponent={
-            (location, cb) => {
-              System.import('modules/blog/pages/ListPosts')
-                .then(loadRoute(cb))
-                .catch(err => errorLoading(err))
-            }
-          }
-        />
-        <Route
-          path={'/posts/create'}
-          getComponent={
-            (location, cb) => {
-              System.import('modules/blog/pages/PostCreate')
-                .then(loadRoute(cb))
-                .catch(err => errorLoading(err))
-            }
-          }
-        />
-        <Route
-          path={'/posts/:postId'}
-          getComponent={
-            (location, cb) => {
-              System.import('modules/blog/pages/PostDetail')
-                .then(loadRoute(cb))
-                .catch(err => errorLoading(err))
-            }
-          }
-        />
-        <Route
-          path={'/posts/:postId/edit'}
-          getComponent={
-            (location, cb) => {
-              System.import('modules/blog/pages/PostEdit')
                 .then(loadRoute(cb))
                 .catch(err => errorLoading(err))
             }
@@ -97,7 +56,7 @@ const AppRouter = props => (
         }
       />
     </Router>
-  </ApolloProvider>
+  </Provider>
 )
 
 export default AppRouter
